@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Base path configuration for Flutter apps -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="admin">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-192.png"> <!-- Use appropriate size for iOS -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Additional icon formats for better compatibility -->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/Icon-512.png">
+
+  <!-- Manifest file for Progressive Web Apps -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Manifest icons for Progressive Web Apps -->
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/Icon-512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/Icon-maskable-192.png" purpose="maskable">
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/Icon-maskable-512.png" purpose="maskable">
+
+  <title>admin</title>
+
+  <!-- Firebase initialization -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCIa8CPFqXQ6rriYP_jlQcToSdQsw1XS7c",
+      authDomain: "accurate-scale-app-web.firebaseapp.com",
+      projectId: "accurate-scale-app-web",
+      storageBucket: "accurate-scale-app-web.appspot.com",
+      messagingSenderId: "478213709699",
+      appId: "1:478213709699:web:a2e0543b7173b2f33f20b6",
+      measurementId: "G-2QY7169RKE",
+    };
+
+    
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+  </script>
+
+  <!-- Flutter in-app webview support -->
+  <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js"
+    defer></script>
+</head>
+
+<body>
+  <!-- Service worker registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+      });
+    }
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+
+</html>

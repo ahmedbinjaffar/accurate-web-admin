@@ -1,0 +1,2 @@
+# accurate-web-admin
+ Admin Web App  	1.	Category Management: 	•	Admins can add, delete, and update categories. 	2.	Product Management: 	•	Products can be added, deleted, and updated under their respective categories. 	3.	Calendar Management: 	•	Calendar events and images can be managed by the admin. 	4.	YouTube Video Management: 	•	Admins can manage YouTube video links, adding, deleting, or updating as needed.
